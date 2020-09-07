@@ -8,7 +8,7 @@ int main()
     if (num >= 0)
     {
         for (long i = 2; i <= num; i++)
-        factorial *= i; //factorial = factorial * i;
+        factorial = factorial * i;
     }
-    std::cout << factorial << "\n";
+    std::cout << "factorial = " << factorial << "\n";
 }
