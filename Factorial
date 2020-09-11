@@ -1,19 +1,15 @@
 #include <iostream>
 
-int factorial (int n)
+int factorial(int n)
 {
-    int fact = 1;
-    if (n==0 || n==1)
-    return (1);
+    if (n <= 1)
+        return 1;
     else
-    for (int i = 1; i <= n; ++i)
-    fact *= i;
-    return (fact);
+        return n * factorial(n - 1);
 }
-
-int main ()
+int main() 
 {
     int n;
     std::cin >> n;
-    std::cout << factorial(n);
+    std::cout << factorial(n) << "\n";
 }
